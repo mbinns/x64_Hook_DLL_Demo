@@ -21,7 +21,7 @@ int __fastcall h_Subtract(int x)
     //Or just return a modified value, really depends on what you want to do.
     //If there was no return value, you can just call the function with out the return
     std::cout << "Hooked Result: " << std::dec << x+2 << std::endl;
-    return x+2;
+    return o_Subtract(x+4);
 }
 
 extern "C" __declspec(dllexport)
